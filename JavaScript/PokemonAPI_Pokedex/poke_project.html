@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title> National Pokedex </title>
+</head>
+
+<body onload="getFavorites()">
+<link rel="stylesheet" type="text/css" href="poke_css.css">
+<link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet">
+<h1>National Pokedex</h1>
+
+Enter a Pokemon name or Number:<br>
+<input type="text" id="searchBox" value="">
+<button type="submit" onclick ="displayData()">Search</button>
+<select id="selects" onchange="displayData()">
+</select>
+<br><br>
+<form>
+    Pokemon: <br><input type = "text" id="pokemonName" readonly><br>
+    HP: <br><input type = "text" id="hp" readonly><br>
+    Attack: <br><input type = "text" id="atk" readonly><br>
+    Defense: <br><input type = "text" id="def" readonly><br>
+    Special Attack: <br><input type = "text" id="spatk" readonly><br>
+    Special Defense: <br><input type = "text" id="spdef" readonly><br>
+    Speed: <br><input type = "text" id="spe" readonly><br>
+    <!-- EV Yeild: <br><input type = "textarea" id="evyield" readonly><br> -->
+</form>
+  EV Yield<br><textarea name="name" id="evyield" rows="8" cols="80" readonly></textarea><br>
+
+<br>
+<button type="submit" onclick="writeFavorite()">Favorite</button>
+<br>
+
+
+
+<div id="div1">
+
+</div>
+
+<script src= "poke_client.js" defer></script>
+</body>
+</html>
