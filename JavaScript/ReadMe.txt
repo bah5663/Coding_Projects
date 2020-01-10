@@ -1,0 +1,1 @@
+This project uses a pokemon API to search for a pokemon's stats based on the number or name of the pokemon. A node server running express gathers data from the API while the client uses the express URL's to query for information. 
