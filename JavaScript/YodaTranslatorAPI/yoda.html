@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<meta charset="utf-8">
+</head>
+
+<body>
+    <label>Click for a random Star Wars quote!</label>
+    <input type="button" value="Get Quote" onclick="displayQuote()">
+    <p class="a" id="quoteArea"></p>
+
+    <p>Choose between normal and yoda speak:</p>
+    <input type="radio" id="radio1" name="translate" onclick="resetQuote()"> Normal<br>
+    <input type="radio" id="radio2" name="translate" onclick="yodaTranslate(getQuote())"> Yoda<br>
+
+    <p>Check the box to only keep the current quote in the table!</p>
+    Checkbox: <input type="checkbox" id="check" onclick="deleteRows()">
+
+    <table id='table'>
+        <tr>
+            <th>Quote</th>
+            <th>QuoteID</th>
+            <th>Faction#</th>
+            <th>Is Yoda:</th>
+        </tr>
+    </table>
+
+    <script src="yoda.js" defer></script>
+</body>
+
+</html>

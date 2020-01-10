@@ -1,0 +1,22 @@
+table {
+    border-collapse: collapse;
+}
+
+table,
+tr,
+th,
+td {
+    border: 1px solid black;
+    padding: 7px;
+    text-align: left;
+}
+
+p.a {
+    font-style: oblique;
+    font-size: 20px
+}
+
+label {
+    text-decoration: underline;
+    font-weight: bold;
+  }
