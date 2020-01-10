@@ -1,0 +1,1 @@
+This assignment was my first attempt at accessing an API using JS. It uses a drop down to display movies from the Studio Ghibli API and displays the appropriate description.
