@@ -1,0 +1,4 @@
+nidoranm
+nidoranf
+farfetchd
+mr-mime
