@@ -1,0 +1,67 @@
+PART A AND B
+LOG A ------------------------
+
+TIMESTAMP	 LINE
+126 		 16931 stat("/var/mail/user", 0x7fffffffda90) = -1 ENOENT (No such file or directory)
+
+180 		 16931 clone( <unfinished ...>
+
+TIMESTAMP	 LINE
+808 		 16931 stat("/bin/uname", {st_mode=S_IFREG|0755, st_size=31440, ...}) = 0
+
+816 		 16931 clone( <unfinished ...>
+
+LOG B ------------------------
+
+TIMESTAMP	 LINE
+36 		 16931 stat("./count_keystrokes.c", {st_mode=S_IFREG|0775, st_size=280, ...}) = 0
+
+62 		 16931 clone( <unfinished ...>
+
+TIMESTAMP	 LINE
+317 		 16955 stat("/bin/cat", {st_mode=S_IFREG|0755, st_size=52080, ...}) = 0
+
+324 		 16955 clone( <unfinished ...>
+
+TIMESTAMP	 LINE
+500 		 16956 stat("/bin/ls", {st_mode=S_IFREG|0755, st_size=126584, ...}) = 0
+
+501 		 16956 clone( <unfinished ...>
+
+TIMESTAMP	 LINE
+611 		 16956 stat("/bin/rm", {st_mode=S_IFREG|0755, st_size=60272, ...}) = 0
+
+612 		 16956 clone( <unfinished ...>
+
+PART C
+LOG A ------------------------
+
+LOG B ------------------------
+
+TIMESTAMP	 LINE
+4 		 16931 open("/home/user/test/", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 3</home/user/test>
+
+42 		 16931 getdents(3</home/user/test>, /* 0 entries */, 32768) = 0
+
+44 		 16931 close(3</home/user/test>)         = 0
+
+TIMESTAMP	 LINE
+583 		 16959 open(".", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 3</home/user/test>
+
+586 		 16959 getdents(3</home/user/test>, /* 0 entries */, 32768) = 0
+
+587 		 16959 close(3</home/user/test>)         = 0
+
+TIMESTAMP	 LINE
+745 		 16961 open(".", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 3</home/user/test>
+
+748 		 16961 getdents(3</home/user/test>, /* 0 entries */, 32768) = 0
+
+749 		 16961 close(3</home/user/test>)         = 0
+
+TIMESTAMP	 LINE
+899 		 16963 open(".", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 3</home/user/test>
+
+902 		 16963 getdents(3</home/user/test>, /* 0 entries */, 32768) = 0
+
+903 		 16963 close(3</home/user/test>)         = 0
