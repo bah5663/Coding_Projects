@@ -1,0 +1,1 @@
+Java project made using MVC to have mnultiple interfaces where the user can choose a pokemon, see an image of the pokemon along with its stats, and add it to their team. The team can be reset and is saved.
